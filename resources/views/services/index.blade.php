@@ -90,26 +90,37 @@
                                     {{$service->description}}
                                 </p>
                                 <a href="javascript:void(0)" class="
-                     inline-block
-                     py-2
-                     px-7
-                     border border-[#E5E7EB]
-                     rounded-full
-                     text-base text-body-color
-                     font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
-                     transition
-                     ">
+                                        inline-block
+                                        py-2
+                                        px-7
+                                        border border-[#E5E7EB]
+                                        rounded-full
+                                        text-base text-body-color
+                                        font-medium
+                                        hover:border-primary hover:bg-primary hover:text-white
+                                        transition
+                                        ">
                                     {{$service->category}}
                                 </a>
-                            </div>
 
+                                <p class="text-xl font-bold mt-4 mb-4">
+                                    {{$service->price}}$
+                                </p>
+                                <p class="mb-4 font-normal text-gray-700 dark:text-gray-400 break-words">
+                                    {{$service->contact}}
+                                </p>
+                            </div>
                         </div>
 
                     </div>
-                    @endforeach
 
+                    @endforeach
                 </div>
+
+            </div>
+
+
+            </div>
 
 
         </main>
