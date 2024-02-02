@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/', function () {
 Route::get('/services',[ServiceController::class,'index'])->name('services.index');
 Route::get('/services/create',[ServiceController::class,'create'])->name('services.create');
 Route::post('/services',[ServiceController::class,'store'])->name('services.store');
+Route::get('/services/create', [CategoryController::class, 'create'])->name('service.create');
