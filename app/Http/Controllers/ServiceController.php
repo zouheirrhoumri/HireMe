@@ -16,4 +16,15 @@ class ServiceController extends Controller
         return view('services.create');
 
     }
+    public function store(Request $request){
+        $data = $request->validate([
+            'titre' => 'required',
+            'description' => 'required',
+            'category' => 'required',
+            'price' => 'required|numeric',
+            'contact'=>'required|email'
+        ]);
+        $newservice = Service::create($data);
+        return redirect(route('services.index'));
+    }
 }

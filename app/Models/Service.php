@@ -13,7 +13,10 @@ class Service extends Model
         'description',
         'category',
         'price',
-        'created_at'
+        'created_at',
+        'updated_at',
+        'contact'
+    
     ];
 
 }
